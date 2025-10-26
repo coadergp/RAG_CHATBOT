@@ -1,0 +1,37 @@
+mindmap
+  root((RAG Chatbot))
+    Ingestion
+      Loaders:::mod
+        pypdf
+        pymupdf
+      Split & Chunk
+        LangChain splitters
+        size/overlap config
+    Embeddings
+      sentence-transformers
+      OpenAI embeddings (opt)
+    Vector Store
+      FAISS (faiss_store/)
+      ChromaDB (optional)
+    Retrieval
+      Similarity search (top_k)
+      Hybrid Typesense (opt)
+    Orchestration
+      LangChain chains
+      LangGraph state flow
+    Generation
+      LLM via langchain-groq
+      LLM via langchain_openai
+      Prompt + citations
+    App/UI
+      Streamlit chat
+      Source preview
+    Config & Secrets
+      .env via python-dotenv
+      Model & retriever params
+    Notebooks
+      document.ipynb
+      pdf_loader.ipynb
+    Deployment
+      pip install -r requirements.txt
+      Streamlit Cloud / Azure
